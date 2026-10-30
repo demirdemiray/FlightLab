@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "source": "User-supplied T2 polar CSV and atmospheric-settings screenshot",
+  "analysis_type": "T2 / variable-speed constant-lift observations",
+  "reported_altitude_m": 7000,
+  "reported_temperature_c": -75.5,
+  "air_density_kg_m3": 0.723714,
+  "kinematic_viscosity_m2_s": 1.8048e-05,
+  "density_policy": "Use source density when interpreting this polar; do not silently replace with ISA density.",
+  "atmosphere_consistency": "Resolved: 7000 m ISA pressure and actual temperature -75.5 C reproduce source density to displayed precision.",
+  "mass_kg": 32.1,
+  "alpha_range_deg": [
+    -1.25,
+    12.25
+  ],
+  "cl_range": [
+    0.019545,
+    0.75944
+  ],
+  "speed_range_m_s": [
+    59.763,
+    372.53
+  ],
+  "reference_area_geometry_m2": 0.3208322,
+  "control_mode": "fixed_elevator per user workflow; numerical elevator angle not yet supplied",
+  "trim_drag_policy": "No extra trim drag; retain exported total CD. Cm=0 not required.",
+  "validity_notes": [
+    "CL values above 0.75944 are not covered, despite aircraft limit CLmax=0.9.",
+    "CL, Reynolds number and Mach change together in this T2 sweep. A CL-only table is a reference approximation, not an independently sampled Reynolds/Mach map.",
+    "Source points above 300 m/s aircraft limit must not be used as feasible flight speeds.",
+    "Gamma and Vz columns are retained as source output, not used as commanded climb/descent trajectory.",
+    "All 55 points retained in active model. Source Mach calculated using actual temperature -75.5 C. Above Mach 0.65: warning only."
+  ],
+  "mach_acceptance_source": "User requests all points retained and usable; mark Mach>0.65 unreliable, do not reject.",
+  "temperature_offset_c": -45,
+  "temperature_interpretation": "Latest calculator screenshot: altitude 7000 m, ISA offset -45 C, actual temperature -75.5 C. Supersedes earlier -30 C interpretation.",
+  "calculator_pressure_pa": 41060.7,
+  "calculator_density_kg_m3": 0.723716,
+  "calculator_speed_of_sound_m_s": 281.834,
+  "calculator_dynamic_viscosity_pa_s": 1.3227e-05,
+  "calculator_implied_kinematic_viscosity_m2_s": 1.8276506253834378e-05,
+  "viscosity_note": "Keep Flow5 kinematic viscosity 1.8048e-5; calculator dynamic viscosity/density implies about 1.82765e-5 m2/s (~1.27% difference). Sources are retained separately.",
+  "trusted_mach": 0.65
+}

@@ -1,0 +1,12 @@
+{
+  "drag_factor": {
+    "widget": "slider",
+    "label": "Sürükleme çarpanı",
+    "min": 0.5,
+    "max": 3.0,
+    "default": 1.0,
+    "step": 0.01,
+    "description": "Toplam CD ile sürükleme ve gerekli gücü ölçekler; kaldırmayı değiştirmez.",
+    "binding": "Catalog.select.drag_factor"
+  }
+}

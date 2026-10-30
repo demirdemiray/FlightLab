@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "source": "Latest user-supplied T2 CSV; user declares sea-level ISA and no further convergence after supplied endpoint.",
+  "analysis_type": "T2 / variable-speed constant-lift observations",
+  "reported_altitude_m": 0,
+  "reported_temperature_c": 15,
+  "temperature_offset_c": 0,
+  "air_density_kg_m3": 1.225,
+  "kinematic_viscosity_m2_s": 1.4607e-05,
+  "kinematic_viscosity_basis": "Sea-level ISA nominal value, not independently present in CSV or a new settings screenshot.",
+  "mass_kg": 32.1,
+  "point_count": 55,
+  "alpha_range_deg": [
+    -1.25,
+    12.25
+  ],
+  "cl_range": [
+    0.019545,
+    0.75944
+  ],
+  "speed_range_m_s": [
+    45.936,
+    286.34
+  ],
+  "reference_area_geometry_m2": 0.3208322,
+  "effective_cl_max": 0.75944,
+  "cl_max_basis": "User-selected model limit from last supplied converged point. Numerical nonconvergence is not proof of aerodynamic stall. Supersedes previous user limit 0.9.",
+  "last_point_alpha_deg": 12.25,
+  "control_mode": "fixed_elevator per user workflow; numerical elevator angle not yet supplied",
+  "trim_drag_policy": "No extra trim correction; retain total exported CD.",
+  "trusted_mach": 0.65,
+  "point_retention_policy": "All 55 points active; Mach>0.65 warning only.",
+  "source_points_above_trusted_mach": 1,
+  "validity_notes": [
+    "CL and Mach/Re vary together in T2; this is a reference CL-CD model, not an independently sampled Mach/Re map.",
+    "Source nonconvergence beyond the endpoint is user-reported; solver logs and unconverged points are not included.",
+    "Old altitude/cold polar is retained separately and is not relabelled as sea level."
+  ]
+}

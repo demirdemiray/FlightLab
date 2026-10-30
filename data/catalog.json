@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "aircraft": [
+    {
+      "id": "m600-thinsurf-acilar",
+      "name": "M-600-ThinSurf-acılar",
+      "geometry_file": "aircraft/m600-thinsurf-acilar/geometry.xml",
+      "polar_files": [
+        "aircraft/m600-thinsurf-acilar/T7-TriUniform-ThinSurf.csv",
+        "aircraft/m600-thinsurf-acilar/T2-TriUniform-ThinSurf.csv",
+        "aircraft/m600-thinsurf-acilar/polars/sea-level-isa/T2-TriUniform-ThinSurf.csv"
+      ],
+      "mass_properties": {
+        "loading_condition": "Flow5 supplied configuration; includes 12 kg fuel and 5 kg engine point masses",
+        "mass_kg": 32.1,
+        "cg_m": [
+          0.80819,
+          0.0,
+          0.0018626
+        ],
+        "ixx_kg_m2": 0.19948,
+        "iyy_kg_m2": 5.27777,
+        "izz_kg_m2": 5.45354,
+        "ixz_kg_m2": 0.02017,
+        "ixy_kg_m2": null,
+        "iyz_kg_m2": null,
+        "inertia_convention": "Flow5 Inertia in CoG Frame; Ixz sign retained as displayed; tensor convention not yet verified",
+        "source": "Mass and CG: supplied Flow5 CSV; CG_y rounded to zero from screenshot (3.459e-16 cm). Inertias: user-supplied Flow5 screenshot, displayed precision."
+      },
+      "notes": "Selected sea-level ISA T2 polar has 55 points. Effective CLmax=0.75944 per user instruction, based on the last supplied converged point; not a measured stall limit. Previous cold-altitude polar is retained separately. Ixy and Iyz are unknown. Engine selection does not adjust mass properties.",
+      "reference_fuel_kg": 12.0,
+      "limits": {
+        "cl_max": 0.75944,
+        "max_true_airspeed_m_s": 300.0,
+        "trusted_aerodynamic_mach": 0.65,
+        "max_load_factor": 11.0,
+        "min_groundspeed_m_s": 75.0
+      },
+      "aerodynamic_assumptions": {
+        "control_mode": "fixed_elevator",
+        "trim_drag_policy": "neglected",
+        "elevator_deflection_deg": null
+      },
+      "performance_polar_file": "aircraft/m600-thinsurf-acilar/polars/sea-level-isa/T2-TriUniform-ThinSurf.csv",
+      "polar_metadata_file": "aircraft/m600-thinsurf-acilar/polars/sea-level-isa/conditions.json",
+      "mission_requirements": {
+        "launch_method": "catapult",
+        "recovery_method": "parachute",
+        "target_cruise_groundspeed_m_s": 180.55555555555554,
+        "altitude_capability_target_m": 10668.0,
+        "catapult_exit_speed_m_s": 90,
+        "catapult_exit_flight_path_angle_deg": null,
+        "parachute_deployment_altitude_m": null,
+        "parachute_deployment_speed_m_s": null,
+        "catapult_exit_pitch_deg": 10,
+        "model_parachute": false
+      }
+    }
+  ],
+  "engines": [
+    {
+      "id": "amt-titan-392n",
+      "name": "AMT Titan 392 N",
+      "propulsion_kind": "jet",
+      "performance_data_file": "engines/amt-titan-392n/Expandable_TJ_Columnout_STD2.out.csv",
+      "performance_format": "jet_column_output",
+      "altitude_unit": "m",
+      "notes": "User-supplied data accepted as authoritative. Altitude (-) interpreted as metres (source does not label its unit). Case 0 is a separate sea-level static reference: 400 N, 0.015 kg/s. Cases 1–120 form the altitude/Mach grid. No normalization to the 392 N model name. User confirms the CSV altitude/Mach thrust map was generated at fixed maximum RPM; approximately fixed TtCombOut=1200 K is not a throttle map. User declares continuous max RPM=97 kRPM; reference graph ends near 96.5 kRPM. Selected calculation fuel source is the RPM graph.",
+      "rpm_data_file": "engines/amt-titan-392n/rpm_graphs.json",
+      "fuel_source": "rpm_graph",
+      "continuous_max_krpm": 97.0,
+      "performance_operating_regime": "fixed_maximum_rpm"
+    }
+  ]
+}

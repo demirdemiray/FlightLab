@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "source": "Three user-supplied graph images in chat; manually estimated marker centres and plot bounds. Not original numerical test data.",
+  "quality": "approximate_graph_digitization",
+  "conditions": "Ambient conditions, flight speed and continuous operating limits not specified on images. No altitude/Mach correction inferred.",
+  "uncertainty_note": "Reading allowances are engineering estimates for visual digitization, not measured error bounds or confidence intervals. Low-thrust relative errors may be large.",
+  "curves": {
+    "fuel": {
+      "axis_pixels": [
+        116,
+        860,
+        441,
+        34
+      ],
+      "x_range": [
+        30,
+        100
+      ],
+      "y_range": [
+        0,
+        1400
+      ],
+      "unit": "g/min",
+      "markers": [
+        [
+          121,
+          386
+        ],
+        [
+          229,
+          360
+        ],
+        [
+          337,
+          340
+        ],
+        [
+          446,
+          315
+        ],
+        [
+          554,
+          288
+        ],
+        [
+          662,
+          237
+        ],
+        [
+          769,
+          150
+        ],
+        [
+          824,
+          105
+        ]
+      ],
+      "reading_uncertainty_y": 10,
+      "points": [
+        [
+          30.5,
+          189.19
+        ],
+        [
+          40.6,
+          278.62
+        ],
+        [
+          50.8,
+          347.42
+        ],
+        [
+          61.0,
+          433.42
+        ],
+        [
+          71.2,
+          526.29
+        ],
+        [
+          81.4,
+          701.72
+        ],
+        [
+          91.4,
+          1000.98
+        ],
+        [
+          96.6,
+          1155.77
+        ]
+      ],
+      "reading_uncertainty_krpm": 0.3
+    },
+    "thrust": {
+      "axis_pixels": [
+        96,
+        856,
+        370,
+        24
+      ],
+      "x_range": [
+        30,
+        100
+      ],
+      "y_range": [
+        0,
+        45
+      ],
+      "unit": "kgf",
+      "markers": [
+        [
+          101,
+          361
+        ],
+        [
+          211,
+          348
+        ],
+        [
+          321,
+          327
+        ],
+        [
+          431,
+          292
+        ],
+        [
+          542,
+          251
+        ],
+        [
+          653,
+          181
+        ],
+        [
+          763,
+          95
+        ],
+        [
+          818,
+          57
+        ]
+      ],
+      "reading_uncertainty_y": 0.2,
+      "points": [
+        [
+          30.5,
+          1.17
+        ],
+        [
+          40.6,
+          2.86
+        ],
+        [
+          50.7,
+          5.59
+        ],
+        [
+          60.9,
+          10.14
+        ],
+        [
+          71.1,
+          15.48
+        ],
+        [
+          81.3,
+          24.58
+        ],
+        [
+          91.4,
+          35.77
+        ],
+        [
+          96.5,
+          40.71
+        ]
+      ],
+      "reading_uncertainty_krpm": 0.3
+    },
+    "tsfc_check": {
+      "axis_pixels": [
+        105,
+        865,
+        381,
+        31
+      ],
+      "x_range": [
+        30,
+        100
+      ],
+      "y_range": [
+        0,
+        10
+      ],
+      "unit": "kg/(kgf*h)",
+      "markers": [
+        [
+          109,
+          65
+        ],
+        [
+          220,
+          182
+        ],
+        [
+          330,
+          253
+        ],
+        [
+          441,
+          294
+        ],
+        [
+          551,
+          311
+        ],
+        [
+          662,
+          322
+        ],
+        [
+          772,
+          323
+        ],
+        [
+          827,
+          323
+        ]
+      ],
+      "reading_uncertainty_y": 0.1,
+      "points": [
+        [
+          30.4,
+          9.03
+        ],
+        [
+          40.6,
+          5.69
+        ],
+        [
+          50.7,
+          3.66
+        ],
+        [
+          60.9,
+          2.49
+        ],
+        [
+          71.1,
+          2.0
+        ],
+        [
+          81.3,
+          1.69
+        ],
+        [
+          91.4,
+          1.66
+        ],
+        [
+          96.5,
+          1.66
+        ]
+      ],
+      "reading_uncertainty_krpm": 0.3
+    }
+  }
+}
